@@ -13,10 +13,13 @@
   <body>
     <header>
       <h1>
-        This is your Giga Pet
+        This is your Bit Pet
       </h1>
     </header>
-
+    <audio id="sound-intro" src="sounds/derezzed.mp3"></audio>
+<audio id="sound-happy" src="sounds/tron-bit-yes.mp3"></audio>
+<audio id="sound-sad" src="sounds/tron-bit-no.mp3"></audio>
+<audio id="sound-death" src="sounds/tron-bit-no.mp3"></audio>
     <main>
       <section class="pet-image-container">
         <img class="pet-image" src="images/Bit.webp">
@@ -24,7 +27,8 @@
       <section class="dashboard">
         <div>Name: <strong><span class="name"></span></strong></div>
         <div>Weight: <strong><span class="weight"></span> pounds</strong></div>
-        <div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+<div>Happiness: <strong><span class="happiness"></span> tail wags (per min)</strong></div>
+<div>Corruption: <strong><span class="corruption"></span> glitched sectors</strong></div>
         
         <div id="pet-comment" style="font-style: italic; margin-top: 10px; min-height: 20px;"></div>
 
@@ -34,7 +38,11 @@
        <button class="exercise-button">Exercise</button>
       <button class="nap-button">Nap</button>
       <button class="tron-button">Light Cycle</button>
+     
 </div>
+ <button class="tron-button restart-button" style="display: none; margin-top: 20px;">
+  Digitalize
+</button>
       </section>
     </main>
 

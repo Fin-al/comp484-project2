@@ -86,3 +86,17 @@ h1 {
   background-color: #00aaff;
   color: #010814;
 }
+.restart-button {
+    background-color: black;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;  
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.restart-button:hover {
+    background-color: #00ffff;
+    color: black;
+}
