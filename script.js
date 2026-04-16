@@ -13,9 +13,9 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
 
     $('.restart-button').click(function() {
       location.reload(); 
-    });
+    })
   
-})
+});
   
     var pet_info = {name:"Bit", weight: 15, happiness: 20};
     var corruption_level = 0; 
