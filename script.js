@@ -23,21 +23,21 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     function clickedTreatButton() {
       pet_info.happiness += (corruption_level > 5 ? 5 : 2);
       pet_info.weight += (corruption_level > 5 ? 10 : 3);
-      updatePetMessage("Tasty snack!");
+      updatePetMessage("Yummers");
       checkAndUpdatePetInfoInHtml();
     }
     
     function clickedPlayButton() {
       pet_info.happiness += 5;
       pet_info.weight -= 2;
-      updatePetMessage("That was fun!");
+      updatePetMessage("Radical");
       checkAndUpdatePetInfoInHtml();
     }
     
     function clickedExerciseButton() {
       pet_info.happiness -= 3;
       pet_info.weight -= 5;
-      updatePetMessage("Good workout!");
+      updatePetMessage("THE GRID GAMES");
       checkAndUpdatePetInfoInHtml();
     }
 
@@ -51,7 +51,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
         $('*').css('border-color', '');
         $('button').css('box-shadow', '');
       }
-      updatePetMessage("Feeling rested. Corruption stabilized.");
+      updatePetMessage("Bio-Digital Jazz, Man");
       checkAndUpdatePetInfoInHtml();
     }
 
