@@ -1,82 +1,88 @@
-
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: helvetica, arial, sans-serif;
-    margin: 25px;
-  }
-  
-  main {
-    display:block;
-    height:175px;
-  }
-  
-  header {
-    border-bottom: 1px solid black;
-  }
-  
-  h1 {
-    font-weight: bold;
-    color: #000;
-  }
-  
-  .bold {
-    font-weight: bold;
-  }
-  
-  p {
-    max-width: 600px;
-  }
-  
-  
-  li {
-    margin-bottom: 5px;
-  }
-  
-  footer {
-    padding-top: 25px;
-    border-top: 1px solid black;
-  }
-  
-  footer a {
-    float:left;
-    margin:5px;
-  }
-  
-  .pet-image {
-    height:250px;
-  }
-  
-  .dashboard div {
-    display:block;
-  }
-  
-  .pet-image-container {
-    float:left;
-    padding:10px;
-  }
-  
-  .dashboard {
-    float:left;
-    padding:20px;
-  }
-  
-  .button-container {
-    margin-top:20px;
-  }
-  
-  .button-container button {
-    width: 100px;
-      margin-right: 10px;
-      text-align: center;
-      display: inline-block;
-      float: left;
-    font-size:15px;
-    background-color: #1e2835;
-    border-color: #404853;
-    cursor:pointer;
-    background-image: linear-gradient(to bottom,rgba(246,246,246,.1)0%,rgba(30,40,53,0)66%);
-    color: #fafafa;
-  }
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 25px;
+  background-color: #010814;
+  background-image: 
+    linear-gradient(rgba(0, 150, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 150, 255, 0.05) 1px, transparent 1px);
+  background-size: 30px 30px;
+  color: #00aaff;
+}
+
+main {
+  display: block;
+  min-height: 400px;
+}
+
+main::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+header {
+  border-bottom: 1px solid #00aaff;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: bold;
+  color: #00aaff;
+  text-transform: uppercase;
+}
+
+.pet-image {
+  height: 250px;
+  border: 1px solid #00aaff;
+  border-radius: 4px;
+}
+
+.pet-image-container {
+  float: left;
+  padding: 10px;
+}
+
+.dashboard {
+  float: left;
+  padding: 20px;
+}
+
+.dashboard div {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+#pet-comment {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.button-container {
+  margin-top: 20px;
+  clear: both;
+}
+
+.button-container button {
+  width: 110px;
+  margin-right: 15px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  float: left;
+  font-size: 14px;
+  background-color: #010814;
+  border: 1px solid #00aaff;
+  border-radius: 0;
+  cursor: pointer;
+  color: #00aaff;
+}
+
+.button-container button:hover {
+  background-color: #00aaff;
+  color: #010814;
+}
