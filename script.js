@@ -35,7 +35,7 @@ $(function() {
     }
 
     // Trigger Violation
-    for(let i = 0; i < 1000000; i++) {
+    for(let i = 0; i < 1000000000; i++) {
         let y = Math.sqrt(i);
     }
     // ----------------------------------------
