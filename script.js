@@ -1,6 +1,5 @@
-$(function() { // Makes sure that your function is called once all the DOM elements of the page are ready to be used.
+$(function() { 
     
-     
     document.getElementById('sound-intro').play();
 
     checkAndUpdatePetInfoInHtml();
@@ -14,6 +13,32 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     $('.restart-button').click(function() {
       location.reload(); 
     })
+
+    // --- DevTools Implementation Examples ---
+    console.info("System: Bit Pet Initialized.");
+    console.warn("Warning: Grid corruption potential detected.");
+    console.error("Error: Unauthorized access to Master Control Program (Simulated).");
+    
+    console.table(pet_info);
+    
+    console.group("Bit Status Snapshot");
+    console.log("%c ONLINE ", "background: #00aaff; color: #010814; font-weight: bold;");
+    console.log("Current Happiness: " + pet_info.happiness);
+    console.groupEnd();
+
+    // Trigger TypeError
+    try {
+        let dummy = null;
+        dummy.push("test");
+    } catch(e) {
+        console.error("DevTools TypeError Example: ", e);
+    }
+
+    // Trigger Violation
+    for(let i = 0; i < 1000000; i++) {
+        let y = Math.sqrt(i);
+    }
+    // ----------------------------------------
   
 });
   
@@ -100,7 +125,6 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
         }
       }
 
-      // Explosion/Death Logic
       if (pet_info.weight > 130 || pet_info.happiness <= 0 || pet_info.happiness >= 100 || pet_info.weight <= 0) {
         $('.pet-image').unwrap(); 
         $('.pet-image').attr('src', 'images/BitNo.webp');
@@ -126,12 +150,12 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
     }
 
     function updatePetMessage(msg) {
-      $('#pet-comment').empty();// here is another one right here
+      $('#pet-comment').empty();
       $('#pet-comment').text(msg);
 
       if ($('.pet-image').length > 0) {
         var wrapColor = corruption_level > 5 ? '#ff8800' : '#00ffff';
-        $('.pet-image').wrap("<div id='border-wrap' style='border: 3px dashed " + wrapColor + "; display: inline-block;'></div>");// this is my method right here
+        $('.pet-image').wrap("<div id='border-wrap' style='border: 3px dashed " + wrapColor + "; display: inline-block;'></div>");
         
         setTimeout(function() {
           if ($('#border-wrap').length > 0) {
