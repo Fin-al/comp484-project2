@@ -1,2 +1,1 @@
- https://fin-al.github.io/comp484-project2/
- 
+hw10 each screenshot is in the order the hw10 assignment is asking 
