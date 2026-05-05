@@ -17,7 +17,7 @@ $(function() { // Makes sure that your function is called once all the DOM eleme
   
 });
   
-    var pet_info = {name:"Bit", weight: 15, happiness: 20};
+    var pet_info = {name:"Bit", weight: 100, happiness: 20};
     var corruption_level = 0; 
   
     function clickedTreatButton() {
